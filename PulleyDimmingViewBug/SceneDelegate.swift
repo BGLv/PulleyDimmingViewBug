@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Pulley
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,7 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         let mainVC = MainViewController()
-        let navigationVC = UINavigationController(rootViewController: mainVC)
+        let pulleyVC = PulleyViewController(contentViewController: mainVC,
+                                            drawerViewController: UIViewController())
+        pulleyVC.initialDrawerPosition = .closed
+        let navigationVC = UINavigationController(rootViewController: pulleyVC)
+        mainVC.onNextButtonPressed = { [weak navigationVC] in
+            let nextVC = UIViewController()
+            nextVC.view.backgroundColor = .blue
+            navigationVC?.pushViewController(nextVC, animated: true)
+        }
         self.window = window
         window.rootViewController = navigationVC
         window.makeKeyAndVisible()
