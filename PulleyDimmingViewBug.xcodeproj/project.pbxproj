@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8306730E5588233BE2E5F35D /* Pods_PulleyDimmingViewBug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8566DC241442884122D14B53 /* Pods_PulleyDimmingViewBug.framework */; };
 		836882B12768C58A009D5B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836882B02768C58A009D5B59 /* AppDelegate.swift */; };
 		836882B32768C58A009D5B59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836882B22768C58A009D5B59 /* SceneDelegate.swift */; };
 		836882BA2768C58D009D5B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836882B92768C58D009D5B59 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FE3327EE68E390F0DE01DC7 /* Pods-PulleyDimmingViewBug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulleyDimmingViewBug.release.xcconfig"; path = "Target Support Files/Pods-PulleyDimmingViewBug/Pods-PulleyDimmingViewBug.release.xcconfig"; sourceTree = "<group>"; };
 		836882AD2768C58A009D5B59 /* PulleyDimmingViewBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulleyDimmingViewBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836882B02768C58A009D5B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836882B22768C58A009D5B59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		836882BE2768C58D009D5B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		836882C42768C793009D5B59 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		836882C52768C793009D5B59 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		8566DC241442884122D14B53 /* Pods_PulleyDimmingViewBug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulleyDimmingViewBug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C026855AFB071EE544288DED /* Pods-PulleyDimmingViewBug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulleyDimmingViewBug.debug.xcconfig"; path = "Target Support Files/Pods-PulleyDimmingViewBug/Pods-PulleyDimmingViewBug.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8306730E5588233BE2E5F35D /* Pods_PulleyDimmingViewBug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02C1001FEBE0BCBB4F83716F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8566DC241442884122D14B53 /* Pods_PulleyDimmingViewBug.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63B11B92222EAF0B799546E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C026855AFB071EE544288DED /* Pods-PulleyDimmingViewBug.debug.xcconfig */,
+				2FE3327EE68E390F0DE01DC7 /* Pods-PulleyDimmingViewBug.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		836882A42768C58A009D5B59 = {
 			isa = PBXGroup;
 			children = (
 				836882AF2768C58A009D5B59 /* PulleyDimmingViewBug */,
 				836882AE2768C58A009D5B59 /* Products */,
+				63B11B92222EAF0B799546E0 /* Pods */,
+				02C1001FEBE0BCBB4F83716F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 836882C12768C58D009D5B59 /* Build configuration list for PBXNativeTarget "PulleyDimmingViewBug" */;
 			buildPhases = (
+				C03FBBA3878BE746DF071C80 /* [CP] Check Pods Manifest.lock */,
 				836882A92768C58A009D5B59 /* Sources */,
 				836882AA2768C58A009D5B59 /* Frameworks */,
 				836882AB2768C58A009D5B59 /* Resources */,
+				6446B3CCD7F811322DAC3902 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6446B3CCD7F811322DAC3902 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulleyDimmingViewBug/Pods-PulleyDimmingViewBug-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulleyDimmingViewBug/Pods-PulleyDimmingViewBug-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PulleyDimmingViewBug/Pods-PulleyDimmingViewBug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C03FBBA3878BE746DF071C80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PulleyDimmingViewBug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		836882A92768C58A009D5B59 /* Sources */ = {
@@ -275,6 +344,7 @@
 		};
 		836882C22768C58D009D5B59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C026855AFB071EE544288DED /* Pods-PulleyDimmingViewBug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +364,7 @@
 		};
 		836882C32768C58D009D5B59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE3327EE68E390F0DE01DC7 /* Pods-PulleyDimmingViewBug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
